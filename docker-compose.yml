@@ -1,0 +1,8 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - 80
+    container_name: frontend-env-variables
+    environment:
+      - VITE_VARIABLE=${VITE_VARIABLE}
