@@ -4,8 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        VITE_VARIABLE: ${VITE_VARIABLE}
-    expose:
+        VITE_VARIABLE
+    ports:
       - 80
     container_name: frontend-env-variables
     networks:
