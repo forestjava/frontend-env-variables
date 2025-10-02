@@ -1,9 +1,10 @@
 services:
   frontend:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - VITE_VARIABLE: ${VITE_VARIABLE}
     expose:
       - 80
     container_name: frontend-env-variables
-    environment:
-      - VITE_VARIABLE=${VITE_VARIABLE}
-      
