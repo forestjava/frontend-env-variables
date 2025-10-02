@@ -4,5 +4,3 @@ services:
     expose:
       - 80
     container_name: frontend-env-variables
-    environment:
-      - VITE_VARIABLE=${VITE_VARIABLE}

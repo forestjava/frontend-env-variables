@@ -5,6 +5,7 @@ WORKDIR /app
 
 # Build argument for Vite variable
 ARG VITE_VARIABLE
+ENV VITE_VARIABLE=${VITE_VARIABLE}
 
 # Copy package files
 COPY package*.json ./
