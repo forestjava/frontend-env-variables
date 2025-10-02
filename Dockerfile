@@ -3,6 +3,9 @@ FROM node:22 AS builder
 
 WORKDIR /app
 
+# Build argument for Vite variable
+ARG VITE_VARIABLE
+
 # Copy package files
 COPY package*.json ./
 
