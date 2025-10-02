@@ -3,8 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        - VITE_VARIABLE: ${VITE_VARIABLE}
     expose:
       - 80
     container_name: frontend-env-variables
+    args:
+      - VITE_VARIABLE: ${VITE_VARIABLE}
